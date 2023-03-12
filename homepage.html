@@ -1,23 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="loading.css">
     <link rel="stylesheet" href="homepage.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
 </head>
+
 <body>
+
+    <div id="preloader">
+        <div class="center">
+            <div class="ring"></div>
+            <span>Loading...</span>
+        </div>
+    </div>
+
+
     <header>
-        <a href="#" class="logo">logo</a>
+
+        <a href="#" class="logo">Shutter</a>
+        <img src="/DevJam/image/eyelogo1png.png" alt="">
         <ul>
-            <li><a href="#">Home</a> </li>
-            <li><a href="#">About</a> </li>
-            <li><a href="#">Work</a> </li>
-            <li><a href="#">Contact</a> </li>
+            <button>
+                <li><a href="#" class="home">
+                        <p>Home</p>
+                    </a> </li>
+            </button>
+            <button>
+                <li><a href="#" class="about">
+                        <p>About</p>
+                    </a> </li>
+
+            </button>
+            <button>
+                <li><a href="#" class="work">
+                        <p>Work</p>
+                    </a> </li>
+
+            </button>
+            <button>
+                <li><a href="#" class="contact">
+                        <p>Contact</p>
+                    </a> </li>
+            </button>
         </ul>
     </header>
+    <section>
 
-    
+        <img src="/DevJam/image/stars.png" id="stars">
+        <img src="/DevJam/image/moon.png" id="moon">
+        <img src="/DevJam/image/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Shutter Vision</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="/DevJam/image/mountains_front.png" id="mountains_front">
+
+    </section>
+
+    <div class="sec" id="sec">
+        <h2>Scrolling Effects</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed impedit cumque autem vel quos non pariatur sit
+            incidunt ad facilis molestiae nemo repellat tempore laudantium mollitia similique deserunt ratione odit
+            quisquam, laboriosam voluptas quibusdam minus in esse! Temporibus, laboriosam atque?Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Possimus ab, provident molestias explicabo quasi cumque iusto, omnis
+            molestiae velit officia alias, consequatur facilis voluptatem nisi nihil corporis eaque odit repellat cum
+            sunt reiciendis quas dolor <br> <br> maxime voluptas. Incidunt a magni quibusdam eos, esse quam voluptas rem
+            quaerat perspiciatis unde fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vel dolor at
+            dolores molestiae tempore beatae consectetur, officia eligendi, culpa animi. Nulla distinctio tenetur, sit
+            non eum autem amet repellat ullam! Incidunt quod sed officiis eum quidem iste ducimus dolor animi! Fugit,
+            iusto id porro doloremque architecto ut delectus
+        </p>
+    </div>
+    <!-- Scrolling effect of Moon, star , Text,.. -->
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.02 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.25 + 'px';
+            btn.style.marginTop = value * 1.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+    <!-- loader Effect -->
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/HJb6Vw9MZek" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+
+
+    <script>
+        var loader = document.getElementById('preloader');
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+
 </body>
+
 </html>
