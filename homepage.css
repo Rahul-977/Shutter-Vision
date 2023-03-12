@@ -11,8 +11,42 @@ body{
 }
 
 header{
+    display: flex;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; 
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+header .logo{
+    display: flex;
+    text-decoration: none;
+    color: white;
+   margin: 23px 48px;
+   
+
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+    
+}
+
+header ul li a{
+    display: flex;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    
+}
+
+header ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
