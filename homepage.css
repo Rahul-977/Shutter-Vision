@@ -19,7 +19,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 20px 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -42,7 +42,7 @@ header img {
     margin-top: -15px;
     width: 85px;
     height: 85px;
-    margin-left: -525px;
+    margin-left: -600px;
 
 }
 
@@ -206,10 +206,11 @@ button {
     font-size: 1px;
     gap: 0.5rem;
     align-items: center;
-
+    margin-left: 35px;
 }
 
 button p {
+
     margin: 0;
     position: relative;
     font-size: 20px;
@@ -225,18 +226,20 @@ button::after {
     background: var(--hovered-color);
     height: 2px;
     transition: 0.3s ease-out;
+
 }
 
 
 
 button:hover::after {
-    width: 73%;
+    width: 70%;
 
     margin-left: 19px;
 }
 
 button:hover .home p::before {
     width: 100%;
+    margin-left: 0px;
 }
 
 
@@ -249,6 +252,8 @@ button .home p::before {
     color: var(--hovered-color);
     overflow: hidden;
     transition: 0.3s ease-out;
+    margin-left: 0px;
+
 }
 
 button:hover .about p::before {

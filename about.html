@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="p1style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about.css">
     <title>About Us</title>
 </head>
+
 <body>
     <div class="paralax">
-            <div class="paralax-item p-item1" id="mountain"></div>
-            <div class="paralax-item p-item3" id="bg"></div>
-            
+        <div class="paralax-item p-item1" id="mountain"></div>
+        <div class="paralax-item p-item3" id="bg"></div>
+
     </div>
     <div class="container">
         <div class="content-header">
             <h1>About Shutter-Vision:</h1><br>
             <h3>Our Mission:</h3>
-            <h4> We understand this everchanging world has everchanging needs and so we keep evolving our site as per the 
-                changing needs. Our intention is to capture the nature in its most virgin form. Our simple 
+            <h4> We understand this everchanging world has everchanging needs and so we keep evolving our site as per
+                the
+                changing needs. Our intention is to capture the nature in its most virgin form. Our simple
                 agenda is to serve our clients in the best way possible.
             </h4>
             <h3>Our Story:</h3>
-            <h4>Every business has a story to tell and so we have also. Shutter Vision is a startup created by our co-founders
-                Arif Khan, Piyush Tanay and Ritesh Singh. Despite of being a startup, we do have a brief story to tell. It
-                all started with the compassion of all of our co-founders for photography and their destiny made them collide with each other 
-                at MNNIT where they, along with their technical skills laid the the foundation of Shutter-Vision. 
+            <h4>Every business has a story to tell and so we have also. Shutter Vision is a startup created by our
+                co-founders
+                Arif Khan, Piyush Tanay and Ritesh Singh. Despite of being a startup, we do have a brief story to tell.
+                It
+                all started with the compassion of all of our co-founders for photography and their destiny made them
+                collide with each other
+                at MNNIT where they, along with their technical skills laid the the foundation of Shutter-Vision.
             </h4>
             <h3>The wow! moment</h3>
             <h4>
-                Any man-made beauty can't be more superior than god's creation's beauty and our co-founders too have a firm
-                belief in this. In 
+                Any man-made beauty can't be more superior than god's creation's beauty and our co-founders too have a
+                firm
+                belief in this. In
             </h4>
         </div>
         <div class="content">
-            <img src="astro.png">  
+            <img src="astro.png">
         </div>
     </div>
     <script type="text/javascript">
-        $(window).scroll(function(){
+        $(window).scroll(function () {
             var scrollPos = $(this).scrollTop();
             $(".paralax-item p-item1").css({
-                'background-size':100+ scrollPos + '%'
+                'background-size': 100 + scrollPos + '%'
             });
         });
     </script>
 </body>
+
 </html>
