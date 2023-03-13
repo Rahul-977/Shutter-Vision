@@ -1,0 +1,61 @@
+body{
+    overflow-x: hidden;
+}
+.paralax{
+    position: absolute;
+    height: 100%;
+}
+.paralax-item{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.p-item1{
+    background: url("m_1.png") center/cover no-repeat;
+}
+.p-item3{
+    background: url("m_3.png") bottom/100% no-repeat;
+    background-size: cover;
+    background-position: center ;
+    z-index:2;
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+.content-header{
+    font-family: sans-serif;
+    color: white;
+    text-align: center !important;
+    margin-left: 150px;
+}
+.content-header h1{
+    font-size:80px;
+    font-weight: 600;
+    color: rgb(29, 240, 255);
+    margin-bottom: -40px;
+}
+.content-header h3{
+    font-size: 20px;
+    font-weight: 500;
+    color:rgb(255, 134, 54);
+    margin-left: -70%;}
+.content-header h4{
+    font-size: 20px;
+    font-weight: 500;
+    color:rgb(37, 255, 146);
+    margin-left: 5%;
+    
+}
+.content{
+    width:200px;
+    height: auto;
+    margin-right: 40px;
+}
