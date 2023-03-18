@@ -7,6 +7,7 @@
 }
 
 body {
+    overflow-x: hidden;
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
@@ -25,6 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+
 }
 
 header .logo {
@@ -190,14 +192,14 @@ section img#mountains_front {
 
 
 
-button {
+header button {
     padding: 0;
     margin: 0;
     border: none;
     background: none;
 }
 
-button {
+header button {
     --primary-color: #f1eaea;
     --hovered-color: #7e377a;
     position: relative;
@@ -209,7 +211,7 @@ button {
     margin-left: 35px;
 }
 
-button p {
+header button p {
 
     margin: 0;
     position: relative;
@@ -217,7 +219,7 @@ button p {
     color: var(--primary-color)
 }
 
-button::after {
+header button::after {
     position: absolute;
     content: "";
     width: 0;
@@ -231,19 +233,19 @@ button::after {
 
 
 
-button:hover::after {
+header button:hover::after {
     width: 70%;
 
     margin-left: 19px;
 }
 
-button:hover .home p::before {
+header button:hover .home p::before {
     width: 100%;
     margin-left: 0px;
 }
 
 
-button .home p::before {
+header button .home p::before {
     position: absolute;
     /*   box-sizing: border-box; */
     content: "Home";
@@ -256,12 +258,12 @@ button .home p::before {
 
 }
 
-button:hover .about p::before {
+header button:hover .about p::before {
     width: 100%;
 }
 
 
-button .about p::before {
+header button .about p::before {
     position: absolute;
     /*   box-sizing: border-box; */
     content: "About";
@@ -272,12 +274,12 @@ button .about p::before {
     transition: 0.3s ease-out;
 }
 
-button:hover .contact p::before {
+header button:hover .contact p::before {
     width: 100%;
 }
 
 
-button .contact p::before {
+header button .contact p::before {
     position: absolute;
     /*   box-sizing: border-box; */
     content: "Contact";
@@ -288,12 +290,12 @@ button .contact p::before {
     transition: 0.3s ease-out;
 }
 
-button:hover .work p::before {
+header button:hover .work p::before {
     width: 100%;
 }
 
 
-button .work p::before {
+header button .work p::before {
     position: absolute;
     /*   box-sizing: border-box; */
     content: "Work";
@@ -308,6 +310,7 @@ button .work p::before {
     background: #4681bd;
     color: white;
 }
+
 
 .sec .para h1 {
     display: flex;
