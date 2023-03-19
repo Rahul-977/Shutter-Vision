@@ -1,0 +1,76 @@
+body{
+	background: url("bg\ \(2\).jpg") center/cover no-repeat;
+}
+.placesto{
+    font-size:40px;
+    color: #18f3f3;
+}
+.welcome{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    padding-left: 24%;
+    color: #ff8c21;
+}
+.explore{
+    font-size: 35px;
+    color: #fc3333;
+}
+.container{
+    width: 50%;
+    height: 50%;
+    background: gainsboro;
+    margin-top: 5%;
+    margin-left: 26%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+ .swiper{
+    width: 1000%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+}
+.container:hover .overlay{
+    opacity: 0.8;
+}
+.btn {
+    font-family: 'Noto Serif', serif;
+    margin: 0px 9px;
+    background-color: aquamarine;
+    color: black;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(31, 30, 30);
+    color: aliceblue;
+    box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 100px cyan,0 0 200px cyan;
+}

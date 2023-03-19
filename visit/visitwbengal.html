@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="t10.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
+</head>
+
+<body>
+  <div class="placesto">
+    <h2>PLACES TO VISIT:</h2>
+  </div>
+  <div class="welcome">
+    <h1>You're Welcome to West Bengal</h1>
+  </div>
+  
+  <div class="container">
+
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="nature.jpg">
+          <div class="overlay">
+            <div class="content">
+              <h2>Near Nature & Historical</h2>
+              
+                <div class="right">
+                  <button class="btn">Explore</button>
+                </div>  
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide"><img src="art.jpg">
+          <div class="overlay">
+            <div class="content">
+              <h2>Festival,Art & Culture</h2>
+              
+                <div class="right">
+                  <button class="btn">Explore</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide"><img src="wild.jpg">
+          <div class="overlay">
+            <div class="content">
+              <h2>Wildlife and Food</h2>
+                <div class="right">
+                  <button class="btn">Explore</button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+
+      },
+
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+
+    });
+  </script>
+</body>
+
+</html>
