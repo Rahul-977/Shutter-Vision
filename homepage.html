@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shutter Vision</title>
     <link rel="stylesheet" href="explore.css">
     <link rel="stylesheet" href="loading.css">
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="foot.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
 
 </head>
 
@@ -30,12 +35,12 @@
         <ul>
 
             <button>
-                <li><a href="#" class="home">
+                <li><a href="#" class="home" id="home">
                         <p>Home</p>
                     </a> </li>
             </button>
             <button>
-                <li><a href="about.html" class="about">
+                <li><a href="#" class="about">
                         <p>About</p>
                     </a> </li>
 
@@ -97,7 +102,7 @@
             </div>
             <div class="box Box3">
                 <div class="imgBox">
-                    <img src="/image/pvt3.jpg" alt="image not found">
+                    <img src="image/pvt3.jpg" alt="image not found">
                 </div>
                 <div class="conten">
                     <div>
@@ -123,17 +128,68 @@
                 </div>
 
                 <div class="col-2" id="col">
-                    <p><b> Excusively available on instagram</b></p>
-                    <h1>Smart Edit And Photoshoot</h1>
-                    <small>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reprehenderit. Quam
-                        maxime
-                        odit laudantium, porro corrupti ipsum praesentium ex laboriosam.
-                    </small>
-                    <a href="" class="btn">Contact us &#10142;</a>
+                    <h1>It's not a Dream</h1>
+                    <p>" The journey of a thousand miles begins with one step." <br> <span> <b>- Lao Tzu</b> </span>
+                    </p>
+                    <div class="contact">
+                        <form onsubmit="sendEmail(); reset(); return false;">
+                            <h3>Contact Us</h3>
+                            <input type="text" id="name" placeholder="Your name" required>
+                            <input type="email" id="mail" placeholder="Email Id" required>
+                            <input type="text" id="phone" placeholder="Phone no." required>
+                            <textarea id="message" rows="5" placeholder="How can we help you ?"></textarea>
+                            <button>Submit </button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>
+        <hr>
+        <div class="media">
+            <h3>Stay Connected</h3>
+            <div class="basr-social-share social">
+                <ul class="socLog">
+                    <li>
+                        <a class="facebook" href="">
+                            <i class="fa fa-facebook"></i>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="twitter" href="">
+                            <i class="fa fa-twitter"></i>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="googleplus" href="">
+                            <i class="fa fa-google-plus"></i>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="linkedin" href="https://www.instagram.com/explore_creativity/" target="_blank">
+                            <i class="fa fa-instagram"></i>
+
+                        </a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="hom">
+            <div class="hm"><a href="#"> <button>home</button></a></div>
+            <div class="ab"><a href="#"> <button>about</button> </a>
+            </div>
+        </div>
+
     </div>
 
 
@@ -175,6 +231,25 @@
         })
     </script>
 
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "yesfirst000@gmail.com",
+                Password: "9685EFA84CD222A629D2290E956A6101F557",
+                To: 'yesfirst000@gmail.com',
+                From: document.getElementById("mail").value,
+                Subject: " Contact Form ",
+                Body: "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("mail").value
+                    + "<br> Phone no: " + document.getElementById("phone").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+                message => alert("Message sent Succesfully")
+            );
+        }
+    </script>
 </body>
 
 </html>
