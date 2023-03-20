@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+        viewBox="0 0 16 16">
+        <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+    </svg>
+    <link rel="stylesheet" href="ptv.css">
+</head>
+
+<body>
+    <div class="part1">
+        <div class="main">
+            <div class="navbar">
+                <div class="menu">
+
+                    <ul>
+                        <li><a href="ptv.html">PLACES TO VISIT</a></li>
+                        <li><a href="homepage.html">HOME</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input class="srch" type="text" name="" placeholder="  Search Here">
+                    <a href="#"><button class="btn"><i class="bi bi-search"></i></button></a>
+                </div>
+            </div>
+
+            <div class="title">
+                <h1>Places To Visit</h1>
+                <hr>
+            </div>
+            <div class="parag">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Nobis, perferendis. Lorem ipsum dolor
+                    sit <br>
+                    amet consectetur adipisicing elit. Cumque, numquam.</p>
+            </div>
+            <div class="main2">
+                <h2>Explore India's 9 States</h2>
+
+                <div></div>
+                <div class="main-scroll">
+                    <div>
+                        <button class="icon" onclick="scrolll()"> <i class="fas fa-angle-double-left"></i>
+                        </button>
+                    </div>
+                    <div class="cover">
+                        <div class="scroll-img">
+
+                            <div class="child goa">
+                                <img class="child-img" src="/DevJam/image/goa.jpg" alt="">
+                                <span>Goa</span><a href="#"> <button>Explore more</button></a>
+
+                            </div>
+                            <div class="child up">
+                                <img class="child-img" src="/DevJam/image/up.jpeg" alt="">
+                                <span>Uttar Pradesh</span><a href="#"> <button>Explore more</button></a>
+                            </div>
+                            <div class="child rajasthan">
+                                <img class="child-img" src="/DevJam/image/rajasthan.jpeg" alt="">
+                                <span>Rajasthan</span><a href="#"> <button>Explore more</button></a>
+                            </div>
+
+                            <div class="child jammu">
+                                <img class="child-img" src="/DevJam/image/jammu.jpg" alt=""> <span>Jammu and
+                                    Kashmir</span> <a href="#"> <button>Explore more</button></a>
+                            </div>
+                            <div class="child bihar">
+                                <img class="child-img" src="/DevJam/image/bihar.jpg" alt="">
+                                <span>Bihar</span><a href="#"> <button>Explore more</button></a>
+                            </div>
+                            <div class="child bengal">
+                                <a href=""> <img class="child-img" src="/DevJam/image/bengal.jpg" alt=""> <span>West
+                                        Bengal</span><a href="#"> <button>Explore more</button></a>
+                            </div>
+                            <div class="child maha">
+                                <img class="child-img" src="/DevJam/image/maha.jpeg" alt="">
+                                <span>Maharashtra</span><a href="#"> <button>Explore more</button></a>
+                            </div>
+                            <div class="child south">
+                                <img class="child-img" src="/DevJam/image/south.jpeg" alt=""> <span>South
+                                    India</span><a href="#"> <button>Explore more</button></a>
+                            </div>
+                            <div class="child north">
+                                <img class="child-img" src="/DevJam/image/northeast.jpg" alt=""> <span>North East
+                                    India</span> <a href="#"> <button>Explore more</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="icon" onclick="scrollr()"> <i class="fas fa-angle-double-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="pvt-foot">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function scrolll() {
+            var left = document.querySelector(".scroll-img");
+            left.scrollBy(350, 0)
+        }
+        function scrollr() {
+            var right = document.querySelector(".scroll-img");
+            right.scrollBy(-350, 0)
+        }
+    </script>
+</body>
+
+</html>
